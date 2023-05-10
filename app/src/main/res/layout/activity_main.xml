@@ -9,50 +9,54 @@
 
     <ImageView
         android:id="@+id/img_babyshower"
-        android:layout_width="160dp"
-        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295"
+        app:layout_constraintVertical_bias="0.301"
+        app:shapeAppearanceOverlay="@style/RoundCorner"
         app:srcCompat="@drawable/babyshower" />
 
     <ImageView
         android:id="@+id/img_birthday"
-        android:layout_width="210dp"
-        android:layout_height="160dp"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345"
+        app:layout_constraintVertical_bias="0.206"
+        app:shapeAppearanceOverlay="@style/RoundCorner"
         app:srcCompat="@drawable/birthdayanimated" />
 
     <ImageView
         android:id="@+id/img_graduation"
-        android:layout_width="190dp"
-        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655"
+        app:layout_constraintVertical_bias="0.658"
+        app:shapeAppearanceOverlay="@style/RoundCorner"
         app:srcCompat="@drawable/graduation" />
 
     <ImageView
         android:id="@+id/img_wedding"
-        android:layout_width="180dp"
+        android:layout_width="200dp"
         android:layout_height="210dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
+        app:layout_constraintVertical_bias="0.667"
+        app:shapeAppearanceOverlay="@style/RoundCorner"
         app:srcCompat="@drawable/wedding" />
 
     <TextView

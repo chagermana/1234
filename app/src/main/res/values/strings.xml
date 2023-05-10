@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">MyPartyApp</string>
+    <string name="TODO">
+
+        1.madagascar
+        2.Cocomelon
+        3.Sofia the First
+        4.Toy Story
+        5.Pj Masks
+
+
+        </string>
+    <string name="group_a">
+        1.Cookie decorating
+        2.Nerf war
+        3.Pictionary
+        4.Movie Night
+        5.Pinata
+        6.Treasure Hunt
+        7.Paint and Sip
+        8.Backyard Campout
+
+
+    </string>
+
+    <string name="group_a1">
+        
+        
+
+    </string>
 </resources>

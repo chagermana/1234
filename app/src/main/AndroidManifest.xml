@@ -15,6 +15,36 @@
         android:theme="@style/Theme.MyPartyApp"
         tools:targetApi="31">
         <activity
+            android:name=".FoodBabies"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitiesBabies"
+            android:exported="false" />
+        <activity
+            android:name=".Menubabies"
+            android:exported="false" />
+        <activity
+            android:name=".MyAdapter1"
+            android:exported="false" />
+        <activity
+            android:name=".Models"
+            android:exported="false" />
+        <activity
+            android:name=".NewBabies"
+            android:exported="false" />
+        <activity
+            android:name=".BabiesNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartoonsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".CartoonsActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".CartoonsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Adults"
             android:exported="false" />
         <activity

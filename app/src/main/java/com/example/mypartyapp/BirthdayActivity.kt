@@ -16,7 +16,7 @@ class BirthdayActivity : AppCompatActivity() {
 
         button1=findViewById(R.id.Btn_babies)
         button1.setOnClickListener {
-            val intent=Intent(this,babies::class.java)
+            val intent=Intent(this,Menubabies::class.java)
             startActivity(intent)
         }
 

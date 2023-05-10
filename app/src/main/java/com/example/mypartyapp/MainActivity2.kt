@@ -9,10 +9,16 @@ class MainActivity2 : AppCompatActivity() {
 
     private lateinit var recyclerView:RecyclerView
     private lateinit var itemList:ArrayList<Int>
+    private lateinit var itemAdapter:ItemAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         setContentView(R.layout.activity_main)
+
+
+
 
         init()
     }
@@ -36,5 +42,8 @@ class MainActivity2 : AppCompatActivity() {
 
 
     }
+
+
 }
+
 

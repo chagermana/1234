@@ -1,38 +1,98 @@
 package com.example.mypartyapp
 
+import android.content.Intent
 import android.content.res.Resources.Theme
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class babies : AppCompatActivity() {
 
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var themesList: ArrayList<themes>
-    private lateinit var themeAdapter:themeAdapter
+    private lateinit var newRecyclerView: RecyclerView
+    private lateinit var newArrayList: ArrayList<cartoons>
+    lateinit var imageId:Array<Int>
+    lateinit var heading:Array<String>
+    lateinit var Cartoons:Array<String>
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_babies)
 
-        recyclerView=findViewById(R.id.recyclerviewthemes)
-        recyclerView.setHasFixedSize(true)
-        recyclerView.layoutManager=LinearLayoutManager(this)
+        imageId= arrayOf(
+            R.drawable.theme,
+            R.drawable.activities,
+            R.drawable.food
 
-        themesList=ArrayList()
+        )
 
-        themesList.add(themes(R.drawable.madagascar,"Madagascar"))
-        themesList.add(themes(R.drawable.mickeymouse,"Mickey Mouse"))
-        themesList.add(themes(R.drawable.sofia_the_first,"Sofia the first"))
-        themesList.add(themes(R.drawable.pjmasks,"Pj Masks"))
-        themesList.add(themes(R.drawable.cocomelon,"Cocomelon"))
-        themesList.add(themes(R.drawable.toystorytheme1,"Toy Story"))
-        themesList.add(themes(R.drawable.paw_patrol,"Paw Patrol"))
-        themesList.add(themes(R.drawable.vampirina,"Vampiririna"))
+        heading= arrayOf(
+            "THEMES",
+            "ACTIVITIES",
+            "FOOD"
+            )
 
-        themeAdapter =themeAdapter((themesList))
-        recyclerView.adapter=themeAdapter
+        Cartoons= arrayOf(
+            getString(R.string.TODO),
+            getString(R.string.group_a,),
+            getString(R.string.group_a1)
+
+
+        )
+
+
+
+        newRecyclerView=findViewById(R.id.recyclerview_babies)
+        newRecyclerView.layoutManager=LinearLayoutManager(this)
+        newRecyclerView.setHasFixedSize(true)
+        newArrayList= arrayListOf<cartoons>()
+        getUserdata()
+
+
 
     }
+
+    private fun getUserdata() {
+
+        for(i in imageId.indices){
+            val cartoons= cartoons(imageId[i],heading[i])
+            newArrayList.add(cartoons)
+
+        }
+
+        var adapter=MyAdapter(newArrayList)
+        newRecyclerView.adapter=adapter
+        adapter.setOnItemClickListener(object:MyAdapter.onItemClickListener{
+            override fun onItemCLick(position: Int) {
+                //Toast.makeText(this@babies,"You clicked on item no $position",Toast.LENGTH_SHORT).show()
+
+
+                val intent=Intent(this@babies,CartoonsActivity::class.java)
+                intent.putExtra("heading",newArrayList[position].heading)
+                intent.putExtra("imageId",newArrayList[position].titleImage)
+                intent.putExtra("Cartoons",Cartoons[position])
+                startActivity(intent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+        })
+
+    }
+
 }
