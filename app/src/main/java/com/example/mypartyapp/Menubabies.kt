@@ -28,7 +28,7 @@ class Menubabies : AppCompatActivity() {
         }
 
         foodbabies=findViewById(R.id.Btn_food)
-        activitiesbabies.setOnClickListener {
+        foodbabies.setOnClickListener {
             val intent= Intent(this,FoodBabies::class.java)
             startActivity(intent)
         }

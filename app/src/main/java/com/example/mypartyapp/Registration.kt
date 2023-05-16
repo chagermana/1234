@@ -36,7 +36,7 @@ class Registration : AppCompatActivity() {
                         if (it.isSuccessful) {
                             val intent = Intent(this,Login::class.java)
                             startActivity(intent)
-                        } else {
+                        }else{
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                         }

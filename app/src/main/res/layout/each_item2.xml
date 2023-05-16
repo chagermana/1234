@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="8dp"
     app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/design_default_color_on_primary"
     android:layout_marginHorizontal="8dp"
     app:cardElevation="12dp">
 
@@ -61,6 +62,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="Using your birthday party theme, you could make the treasure hunt match e.g if its Dungeons and Dragons, the map could be based on that.Maybe combine with pinata where they have to collectively hit the pinata to get the next clue."
+            android:textColor="#79C2E3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
